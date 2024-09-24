@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+#na {
+    font-weight: 600;
+    font-size: 1.2vw
+}
+
+#mb-2 {
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+.icon {
+    display: flex;
+}
+
+.icon i {
+    position: absolute;
+    top: 1.5%;
+    left: 1%;
+    font-size: 3vw;
+    cursor: pointer;
+}
+
+.icon img {
+    position: absolute;
+    left: 11%;
+    width: 3vw;
+    top: 0.7vh;
+    cursor: pointer;
+}
+
+
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(173, 172, 172);
+    width: 17vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    font-weight: 500;
+}
+
+
+
+.sidebar nav {
+    padding: 45px;
+
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 28px;
+    padding: 33px 0;
+    transition: color 2s ease-in-out;
+
+}
+
+.sidebar nav li :hover {
+    color: rgb(228, 219, 219);
+    text-decoration: underline;
+
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+}
+
+.sidebargo {
+    transform: translate(-265px, 0px);
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 87vw;
+}
+
+.infocontainer {
+    /* background-color: greenyellow; */
+    height: 68vh;
+    width: 74vw;
+    margin: 76px auto;
+    display: flex;
+
+    justify-content: space-around;
+}
+
+.moreabout {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    margin-top: 43px;
+}
+
+.devinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Source Code Pro", monospace;
+}
+
+
+body {
+    /* background:linear-gradient(249deg, #8ed5bd, transparent); */
+    background-image: url('portfolio\ image.jpg');
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+.devinfo .name {
+    font-size: 3.8vw;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9KfXAXp_MkUgctRFaFMkWnirlrYwOiAdMg&s");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* color: rgb(68, 27, 189); */
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+.devinfo .about {
+    background: linear-gradient(90deg, #00ff99, #ff5645, #ffff, #0000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear 5s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    font-size: 3vw;
+}
+
+.devinfo .hello {
+    font-size: 5vw;
+}
+
+.buttons {
+    margin-top: 34px;
+    display: flex;
+}
+
+.buttons button {
+    padding: 16px 22px;
+    border-radius: 18px;
+    background-color: rgb(21, 122, 189);
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    margin-right: 12px;
+    border: 1px solid white;
+}
+
+.buttons button:hover {
+    color: rgb(21, 122, 189);
+    background-color: white;
+    box-shadow: 5px 7px 0px #111;
+
+}
+
+.devpic {
+    border-radius: 50%;
+    width: 402px;
+    height: 68vh;
+    overflow: hidden;
+    /* border-linear-gradient effect show as a border of image */
+    background: linear-gradient(yellow, orange, purple, pink, blue);
+    padding: 12px;
+}
+
+.devpic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease 0.7s;
+    border-radius: 50%;
+
+}
+
+.devpic img:hover {
+    scale: 1.2;
+}
+
+.contactform {
+    position: relative;
+    bottom: 40px;
+    font-family: "Source Code Pro", monospace;
+    padding-top: 10vw;
+    padding-left: 3vw;
+
+
+}
+
+
+
+.contactform h1 {
+    text-align: center;
+}
+
+.contactform div {
+    padding-top: 24px;
+}
+
+form :first-child label {
+    font-weight: 600;
+    font-size: 1.2vw;
+}
+
+#emailHelp {
+    font-size: 12px;
+    color: rgb(0, 0, 255);
+}
+
+.mb-3:nth-child(1),
+:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+
+    margin-top: 12px;
+    width: 34vw;
+    height: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-control::placeholder {
+
+    border: none;
+    border-radius: 12px;
+}
+
+.btn {
+
+    width: 13vw;
+    padding: 10px 22px;
+    border-radius: 18px;
+    background-color: rgb(21, 122, 189);
+    color: white;
+    cursor: pointer;
+
+}
+
+.blogcontainer {
+
+    padding: 16px 12px 12px 12px;
+
+}
+
+.blogcontainer .blogitem {
+    margin: 20px 0 20px 0;
+
+}
+
+.intro {
+    position: relative;
+    top: 2%;
+    margin-left: 12px;
+
+}
+
+.intro p {
+    text-transform: capitalize;
+}
+
+.intro h2 {
+    color: black;
+    transition: all 2s ease-out;
+
+}
+
+.intro h2:hover {
+    color: rgb(16, 16, 234);
+    font-size: 30px;
+}
+
+.blogitem p,
+.intro p {
+    font-family: "Source Code Pro", monospace;
+    padding-top: 7px;
+    padding-bottom: 12px;
+}
+
+.intro h2 {
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+.skillitem {
+    display: flex;
+    font-weight: 600;
+    align-items: start;
+    text-align: start;
+    padding: 6px 12px;
+
+}
+
+.skillitem1 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+
+
+.skills {
+    width: 25vw;
+    height: 3vh;
+    background-color: red;
+}
+
+
+.skillcontainer {
+    padding: 12px;
+}
+
+input {
+    background: white;
+
+
+}
+
+.hundred {
+    background-color: red;
+    width: 20vw;
+    height: 3vh;
+    font-weight: 400;
+}
+
+.eighty {
+    background-color: orange;
+    height: 3vh;
+    width: 15vw;
+    font-weight: 400;
+}
+
+.fourty {
+    background-color: yellowgreen;
+    width: 10vw;
+    height: 3vh;
+    font-weight: 400;
+}
+
+.main2 {
+    position: relative;
+ 
+}
+
+.main2 h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    position: relative;
+    left: -5%;
+    top: 1%;
+    text-align: center;
+    font-size: 8vw;
+   color: red;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 26px;
+    position: relative;
+    top: 4%;
+    right: 6%;
+    
+  
+}
+.card {
+ 
+    box-sizing: border-box;
+    width: 435px;
+    height: 480px;
+    background-color:#9f772f;
+    border-radius: 17px;
+    padding: 12px;
+    transition: all 2s ease-out;
+      position: relative;
+      z-index: 10;
+    /* overflow:auto; */
+   
+}
+
+
+
+.card::-webkit-scrollbar{
+    /* display: none; */
+}
+
+/* .main2{
+   Position: relative;
+    z-index: -1;
+} */
+
+
+ 
+.card img {
+
+    width: 100%;
+    height: 62%;
+    object-fit: contain;
+
+
+}
+
+.card h3 {
+  position: relative;
+    margin-top: 2vh;
+    text-align: center;
+    font-size: 2vw;
+    /* this is used to text the color of linear-gradient */
+    background: linear-gradient(red, blue, pink, black);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.card p{
+    font-family: "Source Code Pro", monospace;
+   
+}
+
+.card a{
+    /* position: relative;
+    z-index:10; */
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+
+.card:first-child{
+    padding-bottom: 100px;
+}
+
+.resume {
+    top: 4%;
+    width: 70vw;
+    height: 90vh;
+    position: relative;
+}
+
+.resume img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+@media (max-width:730px) {
+
+    .main {
+        margin-left: -88px;
+        position: relative;
+        z-index: 12;
+    }
+
+    .devinfo .hello {
+        font-size: 8vw;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .icon i {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        font-size: 34px;
+        cursor: pointer;
+    }
+
+    .icon img {
+        position: absolute;
+        left: 15%;
+        width: 41px;
+        top: 0.6vh;
+        cursor: pointer;
+    }
+
+    /* .ri-menu-3-line{
+        display: none;
+    } */
+    .devinfo .name,
+    .devinfo .about {
+        font-size: 6.8vw;
+    }
+
+    .moreabout {
+        font-size: 15px;
+        font-family: "Source Code Pro", monospace;
+    }
+
+    .sidebar {
+        width: 34vw;
+        text-align: start;
+        position: relative;
+        z-index: 15;
+        font-weight: 500;
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    .sidebar nav li {
+        font-size: 15px;
+
+    }
+
+    .infocontainer {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+
+
+
+
+    #na,
+    #mb-2 {
+        font-weight: 600;
+        font-size: 3vw;
+    }
+
+
+
+    .infocontainer {
+        padding: 12px;
+    }
+
+    .buttons button {
+        padding: 16px 10px;
+        border-radius: 18px;
+        border: 1px solid white;
+    }
+
+    .devpic {
+        overflow: visible;
+        margin: 24px 0;
+        width: 48vw;
+    }
+
+
+
+    .devpic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-top: 0;
+        position: relative;
+        left: 0%;
+    }
+
+    .contactform {
+        position: relative;
+        bottom: 6px;
+    }
+
+    .contactform h1 {
+        text-align: center;
+        font-size: 4vw;
+        margin-top: 4vw;
+    }
+
+    .form-control {
+        margin-top: 12px;
+        width: 43vw;
+    }
+
+    form:first-child label {
+        font-size: 4vw;
+    }
+
+    .btn {
+        width: 25vw;
+        padding: 7px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-check label {
+        font-size: 3.3vw;
+    }
+
+    .card{
+        width: 429px;
+    height: 305px;
+    }
+
+    .card h3{
+        font-size: 2vw;
+        margin-top: 1vh;
+    }
+    .card p,a{
+        font-size: 1vw;
+    }
+    .card a{
+        cursor: pointer;
+    }
+
+}
