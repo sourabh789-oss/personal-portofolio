@@ -12,9 +12,10 @@ body {
     overflow: auto;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
+
 #na {
     font-weight: 600;
     font-size: 1.2vw
@@ -379,10 +380,10 @@ input {
 
 .main2 {
     position: relative;
- 
+
 }
 
-.main2 h1{
+.main2 h1 {
     font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     position: relative;
@@ -390,37 +391,38 @@ input {
     top: 1%;
     text-align: center;
     font-size: 8vw;
-   color: red;
+    color: red;
 }
 
-.cardcontainer{
+.cardcontainer {
     display: flex;
     flex-direction: row;
     column-gap: 26px;
     position: relative;
     top: 4%;
     right: 6%;
-    
-  
+
+
 }
+
 .card {
- 
+  overflow: hidden;
     box-sizing: border-box;
     width: 435px;
     height: 480px;
-    background-color:#9f772f;
+    background-color: #9f772f;
     border-radius: 17px;
     padding: 12px;
     transition: all 2s ease-out;
-      position: relative;
-      z-index: 10;
+    position: relative;
+    z-index: 10;
     /* overflow:auto; */
-   
+
 }
 
 
 
-.card::-webkit-scrollbar{
+.card::-webkit-scrollbar {
     /* display: none; */
 }
 
@@ -430,18 +432,28 @@ input {
 } */
 
 
- 
-.card img {
 
+.card img {
+  
     width: 100%;
     height: 62%;
     object-fit: contain;
-
+    transition: all 3s ease-in;
 
 }
 
+.card img:hover{
+ 
+ scale: 1.2;
+
+}
+
+.card:nth-child(2) img:hover{
+    scale:1;
+}
+
 .card h3 {
-  position: relative;
+    position: relative;
     margin-top: 2vh;
     text-align: center;
     font-size: 2vw;
@@ -453,20 +465,21 @@ input {
     -webkit-background-clip: text;
     color: transparent;
 }
-.card p{
+
+.card p {
     font-family: "Source Code Pro", monospace;
-   
+
 }
 
-.card a{
+.card a {
     /* position: relative;
     z-index:10; */
     cursor: pointer;
     text-decoration: underline;
-    
+
 }
 
-.card:first-child{
+.card:first-child {
     padding-bottom: 100px;
 }
 
@@ -477,11 +490,12 @@ input {
     position: relative;
 }
 
-.resume img{
+.resume img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
+
 @media (max-width:730px) {
 
     .main {
@@ -528,11 +542,12 @@ input {
     }
 
     .sidebar {
-        width: 34vw;
+        width: 38vw;
         text-align: start;
         position: relative;
         z-index: 15;
         font-weight: 500;
+        height: 127vh;
     }
 
     .container {
@@ -540,7 +555,7 @@ input {
     }
 
     .sidebar nav li {
-        font-size: 15px;
+        font-size: 33px;
 
     }
 
@@ -570,9 +585,16 @@ input {
     }
 
     .buttons button {
-        padding: 16px 10px;
-        border-radius: 18px;
+        display: flex;
+    justify-content: center;
+        padding: 5px 10px;
+        border-radius: 10px;
         border: 1px solid white;
+    }
+
+    .buttons button:nth-child(2){
+        display: flex;
+    justify-content: center;
     }
 
     .devpic {
@@ -624,19 +646,22 @@ input {
         font-size: 3.3vw;
     }
 
-    .card{
+    .card {
         width: 429px;
-    height: 305px;
+        height: 305px;
     }
 
-    .card h3{
+    .card h3 {
         font-size: 2vw;
         margin-top: 1vh;
     }
-    .card p,a{
+
+    .card p,
+    a {
         font-size: 1vw;
     }
-    .card a{
+
+    .card a {
         cursor: pointer;
     }
 
