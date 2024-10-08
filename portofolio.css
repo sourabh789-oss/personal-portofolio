@@ -253,11 +253,19 @@ form :first-child label {
 }
 
 .form-control {
-
+    all: unset;
     margin-top: 12px;
+    background: white;
     width: 34vw;
     height: 4vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border: 2px solid transparent;
+}
+
+.form-control:is(:focus){
+   background: linear-gradient(black,black) padding-box, linear-gradient(45deg,blue,red,orange) border-box;
+
+
 }
 
 .form-control::placeholder {
@@ -353,7 +361,7 @@ form :first-child label {
 
 input {
     background: white;
-
+    
 
 }
 
@@ -543,19 +551,23 @@ input {
 
     .sidebar {
         width: 38vw;
-        text-align: start;
+        text-align: center;
         position: relative;
         z-index: 15;
         font-weight: 500;
         height: 127vh;
     }
 
+     .sidebar nav{
+        padding:0px;
+     }
+
     .container {
         justify-content: center;
     }
 
     .sidebar nav li {
-        font-size: 33px;
+        font-size:  55px;
 
     }
 
